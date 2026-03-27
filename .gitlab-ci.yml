@@ -3,10 +3,7 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-    # Create the public folder
-    - mkdir -p public
-    # Copy only HTML, CSS, JS files (and folders if needed)
-    - cp index.html otherpage.html style.css script.js public/
+    - echo "Deploying static site"
   artifacts:
     paths:
       - public
