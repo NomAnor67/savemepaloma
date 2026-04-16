@@ -29,17 +29,46 @@
 </style>  
       <h1 style="color:rgb(179, 201, 223); text-align: center;">Project SavemePaloma</h1>
       <nav class="ms-3">
-        <a href="https://documentaries.pilot-fox.workers.dev/index.html" class="btn btn-outline-light btn-sm me-2">Home</a>
-        <a href="https://documentaries.pilot-fox.workers.dev/duck-run" class="btn btn-outline-light btn-sm me-2">DuckRun</a>
-        <a href="https://documentaries.pilot-fox.workers.dev/iframehtm1" class="btn btn-outline-light btn-sm me-2">FreezeNova</a>
-        <a href="https://documentaries.pilot-fox.workers.dev/mexicraftiframehtm.html" class="btn btn-outline-light btn-sm me-2">Mexicraft</a>
-          <a href="https://documentaries.pilot-fox.workers.dev/iframehtm2" class="btn btn-outline-light btn-sm me-2">Conselhoe Games</a>
-       <a href="https://documentaries.pilot-fox.workers.dev/iframehtm3" class="btn btn-outline-light btn-sm me-2">EduToolsLab</a>
-          <a href="https://documentaries.pilot-fox.workers.dev/iframehtm4" class="btn btn-outline-light btn-sm me-2">Duckmath</a>
-                    <a href="https://documentaries.pilot-fox.workers.dev/iframehtm5" class="btn btn-outline-light btn-sm me-2">Natural Habitat Shorts</a>
-                    <a href="https://documentaries.pilot-fox.workers.dev/iframehtm6" class="btn btn-outline-light btn-sm me-2">vole.wtf</a>
-                    <a href="https://documentaries.pilot-fox.workers.dev/iframehtm7" class="btn btn-outline-light btn-sm me-2">MP3Juice</a>
-          <a href="https://documentaries.pilot-fox.workers.dev/bravesearch.html" class="btn btn-outline-light btn-sm">Search Brave<b style="color:rgb(6, 175, 6)">(BETA)</b></a>
+        <button id="fullscreen-btn">
+  <svg id="enter-icon" viewBox="0 0 24 24">
+    <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+  </svg>
+  <svg id="exit-icon" viewBox="0 0 24 24" style="display:none">
+    <path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>
+  </svg>
+</button>
+
+<script>
+  const btn = document.getElementById('fullscreen-btn');
+  const enterIcon = document.getElementById('enter-icon');
+  const exitIcon = document.getElementById('exit-icon');
+
+  btn.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(err => {
+        // Handle errors (e.g., user interaction required)
+        console.error(`Error attempting to enable fullscreen: ${err.message}`);
+      });
+      enterIcon.style.display = 'none';
+      exitIcon.style.display = 'block';
+    } else {
+      document.exitFullscreen();
+      enterIcon.style.display = 'block';
+      exitIcon.style.display = 'none';
+    }
+  });
+</script>   
+        <a href="https://projectoona.pages.dev/index.html" class="btn btn-outline-light btn-sm me-2">Home</a>
+        <a href="https://projectoona.pages.dev/duck-run" class="btn btn-outline-light btn-sm me-2">DuckRun</a>
+        <a href="https://projectoona.pages.dev/iframehtm1" class="btn btn-outline-light btn-sm me-2">FreezeNova</a>
+        <a href="https://projectoona.pages.dev/mexicraftiframehtm.html" class="btn btn-outline-light btn-sm me-2">Mexicraft</a>
+          <a href="https://projectoona.pages.dev/iframehtm2" class="btn btn-outline-light btn-sm me-2">Conselhoe Games</a>
+       <a href="https://projectoona.pages.dev/iframehtm3" class="btn btn-outline-light btn-sm me-2">EduToolsLab</a>
+          <a href="https://projectoona.pages.dev/iframehtm4" class="btn btn-outline-light btn-sm me-2">Duckmath</a>
+                    <a href="https://projectoona.pages.dev/iframehtm5" class="btn btn-outline-light btn-sm me-2">Natural Habitat Shorts</a>
+                    <a href="https://projectoona.pages.dev/iframehtm6" class="btn btn-outline-light btn-sm me-2">vole.wtf</a>
+                    <a href="https://projectoona.pages.dev/iframehtm7" class="btn btn-outline-light btn-sm me-2">MP3Juice</a>
+          <a href="https://projectoona.pages.dev/bravesearch.html" class="btn btn-outline-light btn-sm">Search Brave<b style="color:rgb(6, 175, 6)">(BETA)</b></a>
       </nav>
       <div></div>
  

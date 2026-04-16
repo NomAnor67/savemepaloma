@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Documentaries</title>
-    <link rel="icon" type="image/webp" href="./favicon.webp">
+    <link rel="icon" type="image/x-icon" href="https://projectoona.pages.dev/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body> 
@@ -29,30 +29,59 @@
 </style>  
       <h1 style="color:rgb(179, 201, 223); text-align: center;">Project SavemePaloma</h1>
       <nav class="ms-3">
-        <a href="https://documentaries.pilot-fox.workers.dev/index.html" class="btn btn-outline-light btn-sm me-2">Home</a>
-        <a href="https://documentaries.pilot-fox.workers.dev/duck-run" class="btn btn-outline-light btn-sm me-2">DuckRun</a>
-        <a href="https://documentaries.pilot-fox.workers.dev/iframehtm1" class="btn btn-outline-light btn-sm me-2">FreezeNova</a>
-        <a href="https://documentaries.pilot-fox.workers.dev/mexicraftiframehtm.html" class="btn btn-outline-light btn-sm me-2">Mexicraft</a>
-          <a href="https://documentaries.pilot-fox.workers.dev/iframehtm2" class="btn btn-outline-light btn-sm me-2">Conselhoe Games</a>
-       <a href="https://documentaries.pilot-fox.workers.dev/iframehtm3" class="btn btn-outline-light btn-sm me-2">EduToolsLab</a>
-          <a href="https://documentaries.pilot-fox.workers.dev/iframehtm4" class="btn btn-outline-light btn-sm me-2">Duckmath</a>
-                    <a href="https://documentaries.pilot-fox.workers.dev/iframehtm5" class="btn btn-outline-light btn-sm me-2">Natural Habitat Shorts</a>
-                    <a href="https://documentaries.pilot-fox.workers.dev/iframehtm6" class="btn btn-outline-light btn-sm me-2">vole.wtf</a>
-                    <a href="https://documentaries.pilot-fox.workers.dev/iframehtm7" class="btn btn-outline-light btn-sm me-2">MP3Juice</a>
-          <a href="https://documentaries.pilot-fox.workers.dev/bravesearch.html" class="btn btn-outline-light btn-sm">Search Brave<b style="color:rgb(6, 175, 6)">(BETA)</b></a>
+        <button id="fullscreen-btn">
+  <svg id="enter-icon" viewBox="0 0 24 24">
+    <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+  </svg>
+  <svg id="exit-icon" viewBox="0 0 24 24" style="display:none">
+    <path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>
+  </svg>
+</button>
+
+<script>
+  const btn = document.getElementById('fullscreen-btn');
+  const enterIcon = document.getElementById('enter-icon');
+  const exitIcon = document.getElementById('exit-icon');
+
+  btn.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(err => {
+        // Handle errors (e.g., user interaction required)
+        console.error(`Error attempting to enable fullscreen: ${err.message}`);
+      });
+      enterIcon.style.display = 'none';
+      exitIcon.style.display = 'block';
+    } else {
+      document.exitFullscreen();
+      enterIcon.style.display = 'block';
+      exitIcon.style.display = 'none';
+    }
+  });
+</script>   
+        <a href="https://projectoona.pages.dev/index.html" class="btn btn-outline-light btn-sm me-2">Home</a>
+        <a href="https://projectoona.pages.dev/duck-run" class="btn btn-outline-light btn-sm me-2">DuckRun</a>
+        <a href="https://projectoona.pages.dev/iframehtm1" class="btn btn-outline-light btn-sm me-2">FreezeNova</a>
+        <a href="https://projectoona.pages.dev/mexicraftiframehtm.html" class="btn btn-outline-light btn-sm me-2">Mexicraft</a>
+          <a href="https://projectoona.pages.dev/iframehtm2" class="btn btn-outline-light btn-sm me-2">Conselhoe Games</a>
+       <a href="https://projectoona.pages.dev/iframehtm3" class="btn btn-outline-light btn-sm me-2">EduToolsLab</a>
+          <a href="https://projectoona.pages.dev/iframehtm4" class="btn btn-outline-light btn-sm me-2">Duckmath</a>
+                    <a href="https://projectoona.pages.dev/iframehtm5" class="btn btn-outline-light btn-sm me-2">Natural Habitat Shorts</a>
+                    <a href="https://projectoona.pages.dev/iframehtm6" class="btn btn-outline-light btn-sm me-2">vole.wtf</a>
+                    <a href="https://projectoona.pages.dev/iframehtm7" class="btn btn-outline-light btn-sm me-2">MP3Juice</a>
+          <a href="https://projectoona.pages.dev/bravesearch.html" class="btn btn-outline-light btn-sm">Search Brave<b style="color:rgb(6, 175, 6)">(BETA)</b></a>
       </nav>
       <div></div>
 
       </header>
             <h5 style="color: rgb(243, 230, 42);">
-       For those who have just joined us, use the buttons (↑) to navigate to the various games we offer!
+       For those who have just joined us, use the buttons (↑) to navigate to the various games we offer! Press the small cube beside the home button to enter fullscreen mode! Off-brand Portal coming soon!
       </h5>
-      <h6 style="color:rgb(0, 0, 0)">ANNOUNCEMENTS: v4.0 is our first non-Alpha stable release!We are rivals with Theo's (somehow still good enough to be competition) game site, https://sites.google.com/sfps.k12.nm.us/your-place/home?authuser=0. If you see someone using it, encourage them to move to this site. We have all the games they have plus more!</h6>
+      <h6 style="color:rgb(0, 0, 0)">ANNOUNCEMENTS: v4.0 is our first non-Alpha stable release! We are rivals with Theo's (somehow still good enough to be competition) game site, https://sites.google.com/sfps.k12.nm.us/your-place/home?authuser=0. If you see someone using it, encourage them to move to this site. We have all the games they have plus more!</h6>
 
       <div></div>
-      <h2 style="color: rgb(6, 175, 6);">Whats New in v4.1?🎉</h2>
+      <h2 style="color: rgb(6, 175, 6);">Whats New in v4.2?🎉</h2>
       <div></div>
-      <h5 style="color:rgb(179, 201, 223)">Added MP3Juice, a YouTube video player. Added unblocked DuckMath (taken from Theo's site) link. Refreshed homepage. Make menu UI consistent across all pages. Added DuckMath-level anti-Metadata scanning code for security.</h5>
+      <h5 style="color:rgb(179, 201, 223)">Made the site compatible with iFrames in Google Sites. Added MP3Juice, a YouTube video player. Added unblocked DuckMath (taken from Theo's site) link. Refreshed homepage. Make menu UI consistent across all pages. Added DuckMath-level anti-Metadata scanning code for security.</h5>
       <div></div>
       <h6 style="color:rgb(76, 0, 255)"> For bugs and recommendations, please email us at <a href="mailto:NomAnor67@protonmail.com">NomAnor67@protonmail.com</a>, <a href="mailto:s97920@sfps.k12.nm.us">s97920@sfps.k12.nm.us (this is the only email that works if your using your school email to send us a message)</a>, or our Discord server.</h6>
  <iframe src="https://www3.cbox.ws/box/?boxid=3554103&boxtag=30GyF4" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
