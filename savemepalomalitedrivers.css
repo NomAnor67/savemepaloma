@@ -1,0 +1,92 @@
+      header {
+  border-bottom: 2px solid #FEFEFE;
+  padding-bottom: 10px;
+}
+      h1 {
+  margin: 0;
+}
+      .menubutton {
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #1b1b1b;
+  transition: background-color 0.3s;
+}
+
+.menubutton:hover {
+  background-color: #294b6e;;
+}
+
+.patchbutton:active {
+  transform: translateY(2px);
+}   
+    .patchbutton {
+  border: none;
+  color: rgb(140, 255, 0);
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #014dff;
+  transition: background-color 0.3s;
+}
+
+.patchbutton:hover {
+  background-color: #294b6e;;
+}
+
+.patchbutton:active {
+  transform: translateY(2px);
+}
+#showHeaderBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  display: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1b1b1b;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+#showHeaderBtn:hover {
+  background-color: #294b6e;
+}
+header.retracted {
+  display: none;
+}
+#HeaderBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  display: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+#HeaderBtn:hover {
+  background-color: #294b6e;
+}
+header.retracted {
+  display: none;
+}
+ .centered { text-align: center; }

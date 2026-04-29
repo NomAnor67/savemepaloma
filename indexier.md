@@ -1,4 +1,4 @@
-﻿                       uuuuuuuuuuuuuuuuu                   
+﻿                  uuuuuuuuuuuuuuuu                   
                   vuuuuuuuuuuuuuuuuu  uu               
            cuuuuvx   uuuuuuuuuuuuuuu  vuuuux           
          nuuuuuuuuuv    uuuuuuuuuuuuv  uuuuuuu         
@@ -146,4 +146,3 @@ https://interstellar-dkla.onrender.com/2.html
     • https://mathwizard.pages.dev/
     • https://mathhomework.netlify.app/
     • https://skoolworld.translate.goog
-
