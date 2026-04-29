@@ -29,7 +29,8 @@ uuuuu  xuuuuuu                           uuuuuuuuuuuuuu
                uu  uuuuuuuuuuuuuuuuuux                 
                    uuuuuuuuuuuuuuuuu   
 © 2026 Aperture Science
-Welcome to the Cooperative Website Testing Initiative!
+Indexier File v1.0
+Welcome to the Cooperative Website Testing Initiative! Feel free to tets these sites to your content, helping us find new links to add to our site! Regular webscrapes will provide new links to test constantly.
 
 
 
