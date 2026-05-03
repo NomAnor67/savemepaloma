@@ -40,6 +40,7 @@
          position: sticky;
            position: sticky;
   top: 0;
+  background-color: inherit;
   animation: stick linear both;
   animation-timeline: scroll();
   animation-range: 0px 45px;
